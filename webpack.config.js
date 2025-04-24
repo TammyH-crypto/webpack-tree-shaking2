@@ -1,9 +1,9 @@
 "use strict";
 
 import path from "path";
-import { FileURLToPath } from "url";
+import { fileURLToPath } from "url";
 
-const __filename = FileURLToPath(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default {
@@ -15,17 +15,12 @@ export default {
   module: {
     rules: [
       {
-        test: /\.m?js$/,
+        test: /.css$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          },
-        },
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
-  mode: "development",
+  mode: "production",
  
 };

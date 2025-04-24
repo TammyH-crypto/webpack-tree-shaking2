@@ -1,0 +1,29 @@
+{
+  "name": "webpack-tree-shaking",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TammyH-crypto/webpack-tree-shaking2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TammyH-crypto/webpack-tree-shaking2/issues"
+  },
+  "homepage": "https://github.com/TammyH-crypto/webpack-tree-shaking2#readme",
+  "description": "",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.6",
+    "webpack-cli": "^6.0.1"
+  }
+}
